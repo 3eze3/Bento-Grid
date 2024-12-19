@@ -1,0 +1,29 @@
+@use '../abstract/variables' as v;
+@use '../abstract/mixins' as mx;
+body {
+	min-height: 100dvh;
+	font-size: v.$paragraph;
+	hyphens: manual;
+	font-smooth: always;
+	line-height: 0.9;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #171717;
+}
+
+h1 {
+	font-family: v.$DMSans-md;
+}
+
+h2 {
+	font-family: v.$DMSans-rg;
+}
+
+p,
+span {
+	font-size: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	text-decoration: none;
+	color: inherit;
+}

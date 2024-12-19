@@ -1,0 +1,22 @@
+@use '../abstract/variables' as v;
+.social {
+	&__title {
+		font-size: 3.5rem;
+		text-align: center;
+		color: v.$white;
+		font-family: v.$DMSans-v;
+		&-color {
+			color: v.$yellow-500;
+		}
+		&-font {
+			font-family: v.$DMSans-v-it;
+		}
+	}
+
+	&__image {
+		width: 12rem;
+	}
+	&__description {
+		color: v.$purple-100;
+	}
+}

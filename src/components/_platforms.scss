@@ -1,0 +1,20 @@
+@use '../abstract/variables' as v;
+.platforms {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 2rem;
+	padding-inline: 1.5rem;
+	justify-content: flex-end;
+	&__title {
+		font-size: 1.8em;
+		color: v.$black;
+	}
+
+	&__image {
+		position: absolute;
+		top: 0.5rem;
+		left: 0.5rem;
+		height: 4.5rem;
+		object-position: left center;
+	}
+}

@@ -1,0 +1,114 @@
+@use '../abstract/mixins' as mx;
+@use '../abstract/variables' as v;
+.main {
+	max-width: 1200px;
+	min-height: 100dvh;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-auto-rows: 65px;
+	justify-content: center;
+	align-content: center;
+	gap: 1.5rem;
+	padding: 1.5rem 3rem;
+
+	@include mx.mobile(500px) {
+		padding: 1rem;
+		grid-template-columns: repeat(1, 1fr);
+		max-width: 100%;
+		width: 100%;
+	}
+
+	&__card {
+		transition: box-shadow 0.1s ease-in, transform 0.15s ease;
+		perspective: 100rem;
+		transform-style: preserve-3d;
+		@include mx.flex();
+		border-radius: 0.6rem;
+		@include mx.mobile(500px) {
+			padding-inline: 0rem;
+			padding-left: 0;
+			padding-right: 0;
+		}
+		&:hover {
+			box-shadow: 0.1rem 0.1rem 0.2rem #3d2e7b27, 0.2rem 0.2rem 0.4rem #291f5485,
+				0.4rem 0.4rem 0.8rem #4b3895;
+		}
+
+		@include mx.mobile(500px) {
+			grid-column: span 2;
+		}
+
+		&-post {
+			background-color: v.$yellow-100;
+			grid-row: span 5;
+			@include mx.mobile(500px) {
+				order: 7;
+			}
+		}
+
+		&-social {
+			background-color: v.$purple-500;
+			grid-column: span 2;
+			grid-row: span 4;
+
+			@include mx.mobile(500px) {
+				order: 1;
+			}
+		}
+
+		&-optimized {
+			background-color: v.$purple-100;
+			grid-row: span 7;
+			@include mx.mobile(500px) {
+				order: 4;
+			}
+		}
+
+		&-platforms {
+			background-color: v.$white;
+			@include mx.mobile(500px) {
+				order: 2;
+			}
+		}
+
+		&-consistent {
+			background-color: v.$yellow-500;
+			@include mx.mobile(500px) {
+				order: 3;
+			}
+		}
+
+		&-platforms,
+		&-consistent {
+			grid-row: span 3;
+		}
+
+		&-ai {
+			background-color: v.$yellow-500;
+			grid-row: span 5;
+			@include mx.mobile(500px) {
+				order: 8;
+			}
+		}
+
+		&-audience {
+			grid-row: span 3;
+			background-color: v.$white;
+
+			@include mx.mobile(500px) {
+				order: 6;
+			}
+		}
+
+		&-followers {
+			grid-column: span 2;
+			grid-row: span 3;
+			background-color: v.$purple-500;
+			@include mx.mobile(500px) {
+				grid-row: span 4;
+				order: 5;
+			}
+		}
+	}
+}

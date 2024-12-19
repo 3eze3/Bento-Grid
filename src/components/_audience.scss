@@ -1,0 +1,20 @@
+@use '../abstract/variables' as v;
+.audience {
+	padding-inline: 1.5rem;
+	align-items: flex-start;
+	gap: 1rem;
+
+	&__title {
+		text-align: left;
+		font-size: 3.5em;
+		color: v.$black;
+	}
+
+	&__description {
+		font-size: 1.1em;
+	}
+
+	&__image {
+		width: 11rem;
+	}
+}

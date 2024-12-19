@@ -1,0 +1,66 @@
+// --------------------------- Font-Face -----------------------------
+@font-face {
+	font-family: 'DMSans-Medium';
+	font-weight: 500;
+	src: local('DMSans-Medium'),
+		url('../assest/fonts/static/DMSans-Medium.woff2') format(woff2),
+		url('../assest/fonts/static/DMSans-Medium.woff') format(woff),
+		url('../assest/fonts/static/DMSans-Medium.ttf') format(truetype);
+}
+
+@font-face {
+	font-family: 'DMSans-Regular';
+	font-weight: 400;
+	src: local('DMSans-Regular'),
+		url('../../build/assest/fonts/static/DMSans-Regular.woff2') format(woff2),
+		url('../../build/assest/fonts/static/DMSans-Regular.woff') format(woff),
+		url('../../build/assest/fonts/static/DMSans-Regular.ttf') format(truetype);
+}
+
+@font-face {
+	font-family: 'DMSans-Medim-Italic';
+	font-weight: 500;
+	src: local('DMSans-Medium-Italic'),
+		url('../assest/fonts/static/DMSans-MediumItalic.woff2') format(woff2),
+		url('../assest/fonts/static/DMSans-MediumItalic.woff') format(woff),
+		url('../assest/fonts/static/DMSans-MediumItalic.ttf') format(truetype);
+}
+
+@font-face {
+	font-family: 'DMSans-Variable-Italic';
+	font-weight: 400;
+	src: local('DMSans-Variable-Italic'),
+		url('../assest/fonts/DMSans-Variable-Italic.woff2') format(woff2),
+		url('../assest/fonts/DMSans-Variable-Italic.woff') format(woff),
+		url('../assest/fonts/DMSans-Variable-Italic.ttf') format(truetype);
+}
+
+@font-face {
+	font-family: 'DMSans-Variable';
+	font-weight: 400;
+	src: local('DMSans-Variable'),
+		url('../assest/fonts/DMSans-Variable.woff2') format(woff2),
+		url('../assest/fonts/DMSans-Variable.woff') format(woff),
+		url('../assest/fonts/DMSans-Variable.ttf') format(truetype);
+}
+// --------------------------- Family Fonts ---------------------------
+$DMSans-md: 'DMSans-Medium';
+$DMSans-rg: 'DMSans-Regular';
+$DMSans-md-it: 'DMSans-Medium-Italic';
+$DMSans-v-it: 'DMSans-Variable-Italic';
+$DMSans-v: 'DMSans-Variable';
+// --------------------------- Size Fonts -----------------------------
+// --------------------------- Colors ---------------------------------
+$mobile: 375px;
+$desktop: 1200px;
+
+$purple-100: hsl(254, 88%, 90%);
+$purple-500: hsl(256, 67%, 59%);
+
+$yellow-100: hsl(31, 66%, 93%);
+$yellow-500: hsl(39, 100%, 71%);
+
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 7%);
+
+$paragraph: 18px;

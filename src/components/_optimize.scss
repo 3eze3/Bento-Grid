@@ -1,0 +1,24 @@
+@use '../abstract/variables' as v;
+.optimized {
+	position: relative;
+	overflow: hidden;
+	justify-content: space-between;
+	padding: 3rem 1.75rem;
+
+	&__title {
+		color: v.$black;
+		font-size: 1.8em;
+	}
+
+	&__image {
+		top: 9rem;
+		left: 2rem;
+		height: 20rem;
+		object-position: left center;
+		position: absolute;
+	}
+
+	&__description {
+		font-size: 1.15em;
+	}
+}

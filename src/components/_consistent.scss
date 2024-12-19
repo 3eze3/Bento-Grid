@@ -1,0 +1,19 @@
+@use '../abstract/variables' as v;
+.consistent {
+	position: relative;
+	overflow: hidden;
+	padding-top: 2rem;
+	padding-inline: 1.5rem;
+	justify-content: flex-start;
+	&__title {
+		font-size: 1.8em;
+		color: v.$black;
+	}
+
+	&__image {
+		position: absolute;
+		bottom: -5rem;
+		width: 13rem;
+		object-position: left center;
+	}
+}

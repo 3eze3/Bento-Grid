@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+	vertical-align: baseline;
+}
+*::before,
+*::after {
+	display: block;
+}
+
+img {
+	max-width: 100%;
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+	object-position: center center;
+}

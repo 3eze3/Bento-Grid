@@ -1,0 +1,16 @@
+@use '../abstract/variables' as v;
+.post {
+	padding-inline: 2rem;
+	&__title {
+		text-align: left;
+		font-size: 2.25rem;
+		font-family: v.$DMSans-v;
+		&-color {
+			color: v.$purple-500;
+			font-family: v.$DMSans-v-it;
+		}
+	}
+	&__image {
+		width: 12rem;
+	}
+}
